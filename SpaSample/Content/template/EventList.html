@@ -1,0 +1,37 @@
+﻿<div id="main" class="container">
+    <h2>Events</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>StartDate</th>
+                    <th>EndDate</th>
+                    <th>Owner</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody data-bind="foreach:events">
+                <tr>
+                    <td data-bind="text:id"></td>
+                    <td><a data-bind="text:title, attr:{href:'#/event/'+id}"></a></td>
+                    <td data-bind="text:startDate"></td>
+                    <td data-bind="text:endDate"></td>
+                    <td data-bind="text:owner"></td>
+                    <td data-bind="text:status"></td>
+                    <td><a class="glyphicon glyphicon-remove" data-bind="click:$parent.close" href="javascript:void(0)"></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-sm-4">
+        <a href="#/event/all">All </a> | 
+        <a href="#/event/opening"> Opening</a> | 
+        <a href="#/event/closed"> Closed</a>
+    </div>
+    <div class="col-sm-2 col-sm-offset-6">
+        <a href="#/event/create">Add Event</a>
+    </div>
+</div>

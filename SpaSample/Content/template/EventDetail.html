@@ -1,0 +1,44 @@
+﻿<div id="main" class="container">
+    <h2>Event Detail</h2>
+    <form role="form" class="form-horizontal">
+        <fieldset data-bind="enable:editEnabled">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="eventTitle">Title *</label>
+                <div class="col-sm-10">
+                    <input type="text" data-bind="value: title" class="form-control" id="eventTitle" name="eventTitle" placeholder="Title">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="eventDesc">Description</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" data-bind="value: description" rows="3" id="eventDesc" name="eventDesc" placeholder="Description"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="eventStart">StartDate *</label>
+                <div class="col-sm-10">
+                    <input class="form-control datepicker" id="eventStart" data-bind="value: startdate" name="eventStart">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="eventEnd">EndDate *</label>
+                <div class="col-sm-10">
+                    <input class="form-control datepicker" id="eventEnd" data-bind="value: enddate" name="eventEnd">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="eventowner">Owner *</label>
+                <div class="col-sm-10">
+                    <input type="text" data-bind="value: owner" class="form-control" id="eventowner" name="eventowner" placeholder="Owner">
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-group">
+            <div class="col-sm-10 col-sm-offset-2">
+                <button type="button" data-bind="visible: canEdit()&&!editEnabled(),click:enable" class="btn btn-default">Edit</button>
+                <button type="submit" data-bind="visible: editEnabled, click: update" class="btn btn-primary">Save</button>
+                <button type="button" onclick="window.location.href='#/'" class="btn btn-link">Back</button>
+            </div>
+        </div>
+    </form>
+</div>
