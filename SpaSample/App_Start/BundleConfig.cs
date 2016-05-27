@@ -43,7 +43,6 @@ namespace SpaSample
 
             // scripts for the application
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
-                    //"~/Scripts/site/template.js",
                     "~/Scripts/site/app.js",
                     "~/Scripts/site/viewmodel.js"
                     ));
