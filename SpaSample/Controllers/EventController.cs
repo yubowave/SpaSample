@@ -61,6 +61,10 @@ namespace SpaSample.Controllers
             return response;
         }
 
+        /// <summary>
+        /// Update event
+        /// </summary>
+        /// <param name="item">updated event</param>
         [ValidateModel]
         public void Put(EventModel item)
         {
