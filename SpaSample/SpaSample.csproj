@@ -291,7 +291,6 @@
     <Content Include="Content\template\EventDetail.html" />
     <Content Include="Content\template\EventList.html" />
     <Content Include="Content\downloads\SpaSample.rar" />
-    <None Include="Properties\PublishProfiles\spasite - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
@@ -399,7 +398,6 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="Views\Home\Index - Copy.cshtml" />
   </ItemGroup>
   <ItemGroup>
