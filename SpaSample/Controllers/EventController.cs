@@ -74,7 +74,12 @@ namespace SpaSample.Controllers
             }
         }
 
-        // PUT: api/Event/5
+        /// <summary>
+        /// PUT: api/Event/5
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="item"></param>
+        /// <returns></returns>
         [ValidateModel]
         public HttpResponseMessage Put(int id, EventModel item)
         {
